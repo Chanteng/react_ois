@@ -1,14 +1,14 @@
 import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Row, Button } from "react-bootstrap";
 import Footer from "../Components/Footer";
 import Header from "../Components/Header";
-import Navbar from "../Components/Navbar";
+import HomeNav from "../Components/HomeNav";
 import Testimonial from "../Components/Testimonial";
 
 function Home() {
   return (
     <>
-      <Navbar />
+      <HomeNav />
       <Header />
 
 
@@ -153,9 +153,8 @@ function Home() {
             </div>
             
           </div>
-          <a href="/gallery" classNameName="btn btn-primary gallery-btn">
-              SEE MORE OF MY WORKS
-            </a>
+          <Button><a href="/gallery" classNameName="btn btn-primary gallery-btn"> 
+            </a>SEE MORE OF MY WORKS</Button>
         </div>
       </div>
 
