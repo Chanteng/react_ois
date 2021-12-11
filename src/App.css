@@ -268,9 +268,9 @@ h2 {
 
 @media(max-width: 768px) {
   .call {
-    /* width: 100%; */
-    /* margin-top: 250px; */
-    font-size: 22px !important;
+    width: 20%;
+    height: 30vh;
+    font-size: 20px !important;
   }
 }
 
@@ -365,7 +365,7 @@ h2 {
   margin-top: 50px;
 }
 
-@media only screen and(max-width: 600px) {
+@media only screen and(max-width: 768px) {
   .main {
     width: 320px;
   }
@@ -423,4 +423,65 @@ h2 {
 }
 
 
-/******************** CONTACT ME **************************/
+/******************** GALLERY **************************/
+
+.gal-card {
+ margin-bottom: 5rem;
+}
+
+.gal-text {
+  text-align: center;
+  font-family:cursive;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+  font-size: 35px;
+}
+
+#gal-btn {
+  width: 20%;
+  height: 7vh;
+  font-size: 25px;
+}
+
+
+
+/******************** WHATSAPP**************************/
+
+
+/* for Desktop*/
+
+.whatsapp_float {
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+        font-size:30px;
+	box-shadow: 2px 2px 3px grey;
+        z-index:100;
+}
+
+.whatsapp-icon {
+	margin-top:16px;
+}
+
+
+/* for mobile */
+
+
+@media screen and (max-width: 767px){
+     .whatsapp-icon {
+	 margin-top:10px;
+     }
+    .whatsapp_float {
+        width: 40px;
+        height: 40px;
+        bottom: 20px;
+        right: 10px;
+        font-size: 22px;
+    }
+}

@@ -153,8 +153,9 @@ function Home() {
             </div>
             
           </div>
-          <Button><a href="/gallery" classNameName="btn btn-primary gallery-btn"> 
-            </a>SEE MORE OF MY WORKS</Button>
+          <a href="/gallery" className="btn btn-primary">
+                    SEE MORE OF OUR WORKS
+                  </a>
         </div>
       </div>
 
