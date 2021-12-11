@@ -1,7 +1,9 @@
 import React from 'react'
 import OrderForm from '../Component/OrderForm';
 import OrderList from '../Component/OrderList';
+import Footer from '../Components/Footer';
 import HomeNav from '../Components/HomeNav'
+import Testimonial from '../Components/Testimonial';
 
 function Order() {
     return (
@@ -9,6 +11,9 @@ function Order() {
            <HomeNav />
            <OrderForm  />
   <OrderList />
+
+  <Testimonial />
+  <Footer />
         </div>
     )
 }

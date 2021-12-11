@@ -22,9 +22,12 @@ function toggleModal() {
     
     <div>
       <Container>
-      <h1>Title: {order.title}</h1>
-      <h3>Date: {order.date}</h3>
-      <h3>Text Area: {order.textarea}</h3>
+      <h3>First Name: {order.fname}</h3>
+      <h3>Last Name: {order.lname}</h3>
+      <h3>Email: {order.email}</h3>
+      <h3>Country: {order.country}</h3>
+      <h3>Size: {order.size}</h3>
+      <h3>Category: {order.category}</h3>
 
       <Button variant="primary" onClick={() => toggleModal()}>
         Edit
