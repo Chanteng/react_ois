@@ -47,12 +47,12 @@ function OrderForm(props) {
           <Row className="mb-3">
             <Form.Group as={Col} controlId="formGridEmail">
               <Form.Label>First Name</Form.Label>
-              <Form.Control type="text" placeholder="First Name" name="fname" value={fname} onChange={(e)=> setFname(e.target.value)} />
+              <Form.Control type="text" required="required" placeholder="First Name" name="fname" value={fname} onChange={(e)=> setFname(e.target.value)} />
             </Form.Group>
 
             <Form.Group as={Col} controlId="formGridAddress1">
             <Form.Label>Last Name</Form.Label>
-            <Form.Control type="text" placeholder="Last Name"  name="lname" value={lname} onChange={(e)=> setLname(e.target.value)} />
+            <Form.Control type="text" required="required" placeholder="Last Name"  name="lname" value={lname} onChange={(e)=> setLname(e.target.value)} />
           </Form.Group>
 
 
@@ -62,12 +62,12 @@ function OrderForm(props) {
           <Row className="mb-3">
             <Form.Group as={Col} controlId="formGridCity">
               <Form.Label>Email</Form.Label>
-              <Form.Control type="email" placeholder="Email"  name="email" value={email} onChange={(e)=> setEmail(e.target.value)} />
+              <Form.Control type="email" required="required" placeholder="Email"  name="email" value={email} onChange={(e)=> setEmail(e.target.value)} />
             </Form.Group>
 
             <Form.Group as={Col} controlId="formGridState">
               <Form.Label>Country</Form.Label>
-              <Form.Select defaultValue="Ghana" value={country} onChange={(e)=> setCountry(e.target.value)} >
+              <Form.Select defaultValue="Ghana"  required="required" value={country} onChange={(e)=> setCountry(e.target.value)} >
                 <option>Ghana</option>
                 <option>China</option>
                 <option>United Kingdom</option>
@@ -80,12 +80,12 @@ function OrderForm(props) {
           <Row className="mb-3">
             <Form.Group as={Col} controlId="formGridCity">
               <Form.Label>Size</Form.Label>
-              <Form.Control type="text" placeholder="Please type Size in Feet"  name="size" value={size} onChange={(e)=> setSize(e.target.value)} />
+              <Form.Control type="text" required="required" placeholder="Please type Size in Feet"  name="size" value={size} onChange={(e)=> setSize(e.target.value)} />
             </Form.Group>
 
             <Form.Group as={Col} controlId="formGridState">
               <Form.Label>Category</Form.Label>
-              <Form.Select defaultValue="Banners" value={category} onChange={(e)=> setCategory(e.target.value)} >
+              <Form.Select defaultValue="Banners" required="required" value={category} onChange={(e)=> setCategory(e.target.value)} >
                 <option>Banners</option>
                 <option>Stickers</option>
                 <option>Invitation Cards</option>
