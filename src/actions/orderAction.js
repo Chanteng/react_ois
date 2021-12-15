@@ -21,3 +21,20 @@ export const editOrder = (orderId, updatedOrder) => {
         payload: {orderId, updatedOrder}
     }
 }
+
+export const getAllOrder = () => {
+    return (dispatch, state, {getFirestore}) => {
+        getFirestore()
+        .collection ("ois-media")
+        .onSnapshot (
+            (snapshot) => {
+                let orders = [];
+                snapshot.forEach((doc) => {
+                    orders.push(doc.data());
+                });
+                console.log(orders);
+                dispatch({type: "SET_ALL_ORDER", payload: orders})
+            },
+            (error) => {}
+        )
+    }}

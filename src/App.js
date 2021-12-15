@@ -1,11 +1,16 @@
-import React from "react"
+import React, { useState, useEffect }  from "react"
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css"
 //import Particles from "react-particles-js";
 import Router from "./Components/Router"
+import {getAllOrder} from "./actions/orderAction"
+import {connect} from "react-redux"
 
-
-function App() {
+function App(props) {
+  // const [users, setUsers] = useState([]);
+  useEffect(() => {
+    props.getAllOrder();
+  }, [])
   return (
     <>
       {/* <Particles 
@@ -34,4 +39,8 @@ function App() {
   );
 }
 
-export default App;
+const mapDispatchToProps = {
+  getAllOrder,
+}
+
+export default connect(null, mapDispatchToProps) (App)

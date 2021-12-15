@@ -30,6 +30,11 @@ const orderReducers = (state = initialState, action) => {
 
       return { ...state, orders: updatedOrder };
 
+
+      case "SET_ALL_CORDER":
+        return { ...state, orders: action.payload };
+  
+
     default:
       return state;
   }
