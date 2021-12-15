@@ -1,6 +1,6 @@
 import React, { useState} from 'react'
 import {v4 as uuid} from "uuid"
-import { Container, Form, Button, Row, Col } from "react-bootstrap";
+import { Container, Form, Button, Row, Col, Alert } from "react-bootstrap";
 import {connect} from 'react-redux'
 import {addOrder} from '../actions/orderAction'
 
@@ -11,9 +11,9 @@ function OrderForm(props) {
     const [country, setCountry] = useState("");
     const [size, setSize] = useState("");
     const [category, setCategory] = useState("");
-    
-  
+
     function handleSubmit(e) {
+
       e.preventDefault();
       
       if(fname && lname && email) {
@@ -25,9 +25,8 @@ function OrderForm(props) {
           size: size,
           category: category,
           id: uuid()
-          
         };
-
+       
       //console.log(newOrder);
       props.addOrder(newOrder);
   
@@ -98,6 +97,7 @@ function OrderForm(props) {
           <Button variant="primary" type="submit">
             Order Now
           </Button>
+         
         </Form>
       </Container>
         </div>
