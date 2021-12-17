@@ -11,21 +11,21 @@ function Gallery() {
 
       <Container>
         <Row>
-            <Col>
+            
         <div className="gal-card">
             <h1 className="gal-text">Hello! We won't be able to post all our works Here,<br/> but you can order for you work now!!!</h1>
-    <img src="../Images/aa.jpg" style={{ height: "52vh", marginRight: "2rem", marginBottom: "2rem"}} />
-    <img src="../Images/jj.jpg" style={{ height: "52vh", marginRight: "2rem", marginBottom: "2rem"}} />
-    <img src="../Images/ee.jpg" style={{ height: "52vh", marginBottom: "2rem"}} />
-    <img src="../Images/dd.jpg" style={{ height: "52vh", marginRight: "2rem", marginBottom: "2rem"}} />
-    <img src="../Images/ff.jpg" style={{ height: "52vh", marginRight: "2rem", marginBottom: "2rem"}} />
-    <img src="../Images/cc.jpg" style={{ height: "52vh", marginBottom: "2rem"}} />
-    <img src="../Images/hh.jpg" style={{ height: "52vh", marginRight: "2rem", marginBottom: "2rem"}} />
-    <img src="../Images/ii.jpg" style={{ height: "52vh", marginRight: "2rem", marginBottom: "2rem"}} />
-    <img src="../Images/bb.jpg" style={{ height: "52vh", marginBottom: "2rem"}} />
+    <img src="../Images/aa.jpg" style={{ height: "48vh", marginRight: "2rem", marginBottom: "2rem"}} />
+    <img src="../Images/jj.jpg" style={{ height: "48vh", marginRight: "2rem", marginBottom: "2rem"}} />
+    <img src="../Images/ee.jpg" style={{ height: "48vh", marginBottom: "2rem"}} />
+    <img src="../Images/dd.jpg" style={{ height: "48vh", marginRight: "2rem", marginBottom: "2rem"}} />
+    <img src="../Images/ff.jpg" style={{ height: "48vh", marginRight: "2rem", marginBottom: "2rem"}} />
+    <img src="../Images/cc.jpg" style={{ height: "48vh", marginBottom: "2rem"}} />
+    <img src="../Images/hh.jpg" style={{ height: "48vh", marginRight: "2rem", marginBottom: "2rem"}} />
+    <img src="../Images/ii.jpg" style={{ height: "48vh", marginRight: "2rem", marginBottom: "2rem"}} />
+    <img src="../Images/bb.jpg" style={{ height: "48vh", marginBottom: "2rem"}} />
     <a href="/order" className="btn btn-primary" id="gal-btn">ORDER NOW!!!</a>
     </div>
-</Col>
+
         </Row>
       </Container>
 
